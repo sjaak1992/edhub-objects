@@ -11,17 +11,20 @@ const product = {
 };
 
 // 1a. Log de naam van de serie in de console.
-
+console.log(product.series);
 
 // 1b. Verander de kleur van het product in "Roze" en log het object in de console
-
+product.color = "Roze"
+console.log(product);
 
 // 1c. Log de tweede materiaalsoort ("kunststof") in de console
+
+console.log(product.material[1]);
 
 
 // 1d. Log de afmetingen (b-h-d) in de console
 
-
+console.log(product["b-h-d"]);
 
 /* Opdracht 2 */
 // Schrijf een losstaande functie die bovenstaand object verwacht. De functie gebruikt de naam van het product
@@ -29,12 +32,22 @@ const product = {
 // ---- Verwachte uitkomst:
 // "De Smeg Waterkoker is gemaakt van roestvrijstaal en kunststof"
 
+function makeAString (product){
+    return "De " + product.productName + "is gemaakt van " + product.material[0] + "en " + product.material[1];
+}
+
+const uitkomstOefeningtwee = makeAString(product);
+console.log(uitkomstOefeningtwee);
 
 
 /* Opdracht 3 */
 // Maak een object met daarin jouw voornaam (string), achternaam (string),
 // leeftijd (getal) en geboortedatum (date object). De datum hoeft niet geformat te worden.
 // Log dit in de console.
+
+
+
+
 
 
 
