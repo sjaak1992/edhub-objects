@@ -45,10 +45,14 @@ console.log(uitkomstOefeningtwee);
 // leeftijd (getal) en geboortedatum (date object). De datum hoeft niet geformat te worden.
 // Log dit in de console.
 
+const mijnGegevens = {
+    firstName: "Sjaak",
+    lastName: "The Creator",
+    age: 28,
+    birthDate: new Date ('Dec 18, 1992')
+};
 
-
-
-
+console.log(mijnGegevens)
 
 
 /* Opdracht */
@@ -57,3 +61,9 @@ console.log(uitkomstOefeningtwee);
 // ---- Verwachte uitkomsten:
 // { age: 27 } geeft "Jij bent 27 jaar oud."
 // { age: 56 } geeft "Jij bent 56 jaar oud."
+
+function yourAge(person){
+    return "Jij bent " + person.age + " jaar oud"
+}
+
+console.log(yourAge(mijnGegevens));
